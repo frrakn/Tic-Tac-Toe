@@ -4,17 +4,36 @@
 	width: 8em;
 	border-radius: 1em;
 	border: 2px solid #003359;
-<<<<<<< HEAD
-	background-color: #000000;
-}
-=======
 	background-color: #FFFFFF;
-	position:relative;
 }
 
-img
+div .xbox
 {
-    visibility:hidden;
+    visibility: hidden;
+    display: none;
+}
+
+div .obox
+{
+    visibility: hidden;
+    display: none;
+}
+
+.oclicked .obox
+{
+    visibility: visible;
+    display: inline;
+}
+
+.xclicked .xbox
+{
+    visibility: visible;
+    display: inline;
+}
+
+.clickbox-hover
+{
+	border: 2px solid #FACA00;
 }
 
 .clickbox-clicked
@@ -26,13 +45,12 @@ img
 	background-color: #FFFFFF;
 }
 
-.clickbox-hover
-{
-	border: 2px solid #FACA00;
-}
-
 table
 {
     margin: auto;
 }
->>>>>>> origin/gh-pages
+
+.selected
+{
+    border: 2px solid #FF0000;
+}
