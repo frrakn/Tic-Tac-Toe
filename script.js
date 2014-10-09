@@ -69,13 +69,13 @@ $(document).ready(function()
         }
         
         //check diagonals
-        if($(boxes[0][0]).hasClass(player)&&$(boxes[1][1]).hasClass(player)&&(boxes[2][2]).hasClass(player))
+        if($(boxes[0][0]).hasClass(player)&&$(boxes[1][1]).hasClass(player)&&$(boxes[2][2]).hasClass(player))
         {
             winHandler(0, 0, 1, 1, 2, 2);
             return;
         }
         
-        if($(boxes[2][0]).hasClass(player)&&$(boxes[1][1]).hasClass(player)&&(boxes[0][2]).hasClass(player))
+        if($(boxes[2][0]).hasClass(player)&&$(boxes[1][1]).hasClass(player)&&$(boxes[0][2]).hasClass(player))
         {
             winHandler(2, 0, 1, 1, 0, 2);
             return;
