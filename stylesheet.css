@@ -4,5 +4,35 @@
 	width: 8em;
 	border-radius: 1em;
 	border: 2px solid #003359;
+<<<<<<< HEAD
 	background-color: #000000;
 }
+=======
+	background-color: #FFFFFF;
+	position:relative;
+}
+
+img
+{
+    visibility:hidden;
+}
+
+.clickbox-clicked
+{
+    height: 8em;
+	width: 8em;
+	border-radius: 1em;
+	border: 2px solid #888888;
+	background-color: #FFFFFF;
+}
+
+.clickbox-hover
+{
+	border: 2px solid #FACA00;
+}
+
+table
+{
+    margin: auto;
+}
+>>>>>>> origin/gh-pages
