@@ -3,15 +3,19 @@ $(document).ready(function()
     //creates array to match display
     var rawBoxes = $(".clickbox").get();
     var boxes = [];
-    for(var i = 0; i < 3; i++)
+    var createBoxes = function(rawInputArray, outputArray)
     {
-        if(!boxes[i])
-            boxes[i] = [];
-        for(var j = 0; j < 3; j++)
+        for(var i = 0; i < 3; i++)
         {
-            boxes[i][j] = rawBoxes[i*3+j];
+            if(!outputArray[i])
+                outputArray[i] = [];
+            for(var j = 0; j < 3; j++)
+            {
+                outputArray[i][j] = rawInputArray[i*3+j];
+            }
         }
-    }
+    };
+    createBoxes(rawBoxes, boxes);
     
     //specifies turn, even = X, odd = O
     var turn = 0;
